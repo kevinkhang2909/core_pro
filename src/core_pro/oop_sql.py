@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 class DataPipeLine:
     def __init__(self, query_or_dir):
         self.query = query_or_dir
-        self.status = f'{Fore.LIGHTBLUE_EX}🐔 JDBC:{Fore.RESET}'
+        self.status = f'{Fore.LIGHTBLUE_EX}🤖 JDBC:{Fore.RESET}'
 
     def run_presto_to_df(self, polars=False, priority=25):
         # connection
