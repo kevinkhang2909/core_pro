@@ -1,4 +1,4 @@
-from GSheet import Sheet
+from .GSheet import Sheet
 from datetime import timedelta, datetime
 from pathlib import Path
 import polars as pl
