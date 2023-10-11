@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "core_pro"
-version = "0.0.5"
+version = "0.0.6"
 authors = [
   { name="Kevin Khang", email="kevinkhang2909@gmail.com" },
 ]
@@ -25,7 +25,7 @@ dependencies = [
     'tqdm',
     'sqlalchemy',
     'pyarrow',
-    'presto-python-client==0.8.3',
+    'trino',
     'openpyxl',
     'colorama',
     'boto3',
