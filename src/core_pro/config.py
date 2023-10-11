@@ -45,7 +45,7 @@ class GoogleAuthentication:
 
         # define path
         token_path = project_path / 'token'
-        token_name = project_path / f'token_{service_type}.pickle'
+        token_name = token_path / f'token_{service_type}.pickle'
         json_path = project_path / 'token_json/client_secret.json'
         # check json
         if not json_path.exists():
