@@ -36,11 +36,13 @@ class GoogleAuthentication:
         scopes, versions = google_services[service_type].values()
 
         # find project path
-        project_path = None
-        for i, v in enumerate([*Path.cwd().parents]):
+        lst_path = [*Path.cwd().parents]
+        project_path = lst_path[0]
+        for i, v in enumerate(lst_path):
             if v.parts[-1] in ['PycharmProjects']:
                 break
             project_path = v
+
         # define path
         token_path = project_path / 'token'
         token_name = project_path / f'token_{service_type}.pickle'
